@@ -1,5 +1,10 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .App-logo {
@@ -36,3 +41,148 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 138px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.borderBottom {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  width: 327px;
+  height: 1px;
+  background-color: #E7E7E7;
+}
+
+.coverImg {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 114px;
+  height: 114px;
+  border-radius: 6px;
+}
+
+.title {
+  position: absolute;
+  top: 21px;
+  right: 0px;
+  margin: 0;
+  width: 200px;
+  line-height: 22px;
+  max-height: 44px;
+  font-size: 16px;
+  color: #111111;
+  overflow: hidden;
+  text-align: left;
+}
+
+.interactions {
+  position: absolute;
+  left: 155px;
+  bottom: 24px;
+  width: 100px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comment {
+  width: 15px;
+  height: 14px;
+}
+
+.favour {
+  margin-left: 18px;
+  width: 15px;
+  height: 15px;
+}
+
+.interactionsText {
+  margin-left: 4px;
+  font-size: 13px;
+  color: #999999;
+}
+
+.moreWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+}
+
+.more {
+  position: absolute;
+  bottom: 21px;
+  right: 12px;
+  width: 19px;
+  height: 19px;
+}
+
+.videoPlay {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  padding: 0 7px;
+  height: 15px;
+  border-radius: 7.5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoIcon {
+  margin-right: 2px;
+  width: 8px;
+  height: 9px;
+}
+
+.readCount {
+  margin-left: 2px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.mask {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  padding: 0 78px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.operation {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
